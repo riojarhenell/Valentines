@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="happy-valentines">
+        <div class="valentines-day-card">
+          <div class="clouds"></div>
+          <div class="hearts">
+            <div class="heartOne">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+            <div class="heartTwo">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+                <div class="heartThree">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+             <div class="heartFour">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+             <div class="heartFive">
+             <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+          </div>
+          <div class="text"><span>Happy Valentine's</br> Day!</div>
+        </div>
+        <p class="hover">- hover over the text -</p>
+        </div>
+    <script 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.container').mouseenter(function () {
+                $('.card').stop().animate({
+                    top: '-90px'
+                }, 'slow');
+            }).mouseleave(function () {
+                $('.card').stop().animate({
+                    top: 0
+                }, 'slow');
+            });
+        });
+    </script>
+</body>
+</html>
